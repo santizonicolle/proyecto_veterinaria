@@ -65,7 +65,15 @@ while True:
                 archivo =csv.reader(f)
                 for linea in archivo:
                     if linea[3] == dueño:
-                        print(linea[0:5])                
+                        print(linea[0:5])
+
+        if option_search == "5":
+            DNIdueño=input("Ingrese el nombre del dueño de la mascota a buscar:")
+            with open("pacientes.csv", encoding = 'utf-8') as f:
+                archivo =csv.reader(f)
+                for linea in archivo:
+                    if linea[4] == DNIdueño:
+                        print(linea[0:5])                                
 
         print()
     elif opcion==5:
