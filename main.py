@@ -49,6 +49,22 @@ while True:
                 archivo =csv.reader(f)
                 for linea in archivo:
                     if linea[1] == raza:
+                        print(linea[0:5])
+                                                
+                        
+        if option_search == "3":
+            age=input("Ingrese la edad de la mascota a buscar:")
+            with open("pacientes.csv", encoding = 'utf-8') as f:
+                archivo =csv.reader(f)
+                for linea in archivo:
+                    if linea[2] == age:
+                        print(linea[0:5])
+        if option_search == "4":
+            dueño=input("Ingrese el nombre del dueño de la mascota a buscar:")
+            with open("pacientes.csv", encoding = 'utf-8') as f:
+                archivo =csv.reader(f)
+                for linea in archivo:
+                    if linea[3] == dueño:
                         print(linea[0:5])                
 
         print()
