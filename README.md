@@ -1,3 +1,8 @@
+Integrantes:
+Alexander Morante
+Nicolle Santizo
+
+
 # proyecto_veterinaria
 Veterinaria necesita revisar y registrar datos de una mascota
 
