@@ -43,7 +43,14 @@ while True:
                 for linea in archivo:
                     if linea[0] == name:
                         print(linea[0:5])
-                        
+        if option_search == "2":
+            raza=input("Ingrese la raza de la mascota a buscar:")
+            with open("pacientes.csv", encoding = 'utf-8') as f:
+                archivo =csv.reader(f)
+                for linea in archivo:
+                    if linea[1] == raza:
+                        print(linea[0:5])                
+
         print()
     elif opcion==5:
         print()
