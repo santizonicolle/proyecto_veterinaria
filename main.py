@@ -8,7 +8,8 @@ print("4. Buscar mascota.")
 print("5. Ordenar mascotas.")
 print("6. Guardar mascotas en archivo CSV.")
 
-opcion = int(input("Ingrese la opción que desee:"))
+while True:
+    opcion = int(input("Ingrese la opción que desee:"))
 
 if opcion==1:
     print("Se cargaron los datos de 5 mascotas")
@@ -40,4 +41,4 @@ elif opcion==6:
     print()
 
 else:
-    print("Opción Incorrecta. Elige un número válido.")
+    print("Opción Incorrecta. Elige un número válido."
