@@ -1,7 +1,6 @@
 import csv
 
-with open("pacientes.csv", encoding = 'utf-8') as f:
-    archivo =csv.reader(f)
+
 
 print("¡Bienvenido!")
 print("1. Cargar un archivo csv con datos de 5 mascotas.")
@@ -14,9 +13,12 @@ print("6. Guardar mascotas en archivo CSV.")
 opcion = int(input("Ingrese la opción que desee:"))
 
 if opcion==1:
-    print()
+    print("Se cargaron los datos de 5 mascotas")
 elif opcion==2:
-    print()
+    with open("pacientes.csv", encoding = 'utf-8') as f:
+        archivo =csv.reader(f)
+        for linea in archivo:
+            print(linea)
 elif opcion==3:
     print()
 elif opcion==4:
