@@ -13,3 +13,18 @@ print("6. Guardar mascotas en archivo CSV.")
 
 opcion = int(input("Ingrese la opción que desee:"))
 
+if opcion==1:
+    print()
+elif opcion==2:
+    print()
+elif opcion==3:
+    print()
+elif opcion==4:
+    print()
+elif opcion==5:
+    print()
+elif opcion==6:
+    print()
+
+else:
+    print("Opción Incorrecta.")
