@@ -3,9 +3,13 @@ import csv
 with open("pacientes.csv", encoding = 'utf-8') as f:
     archivo =csv.reader(f)
 
-print("¡Bienvenido! Ingrese la opción que desee:")
-print("1. Cargar un archivo csv con datos de 5 mascotas./n")
+print("¡Bienvenido!")
+print("1. Cargar un archivo csv con datos de 5 mascotas.")
 print("2. Mostrar datos de mascotas cargadas en el sistema.")
-print("2.")
-print("2.")
+print("3. Agregar mascota.")
+print("4. Buscar mascota.")
+print("5. Ordenar mascotas.")
+print("6. Guardar mascotas en archivo CSV.")
+
+opcion = int(input("Ingrese la opción que desee:"))
 
